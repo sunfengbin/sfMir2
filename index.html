@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Demo Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🚀 Demo</div>
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#features">功能</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>欢迎来到我的演示项目</h1>
+      <p class="subtitle">一个用 TRAE 创建的简单网页项目</p>
+      <button id="cta-btn">点击开始</button>
+      <p id="counter-display" class="counter">按钮已被点击 0 次</p>
+    </section>
+
+    <section id="features" class="features">
+      <h2>项目特点</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="emoji">⚡</div>
+          <h3>快速搭建</h3>
+          <p>几分钟就能创建一个完整项目</p>
+        </div>
+        <div class="feature-card">
+          <div class="emoji">🎨</div>
+          <h3>简洁美观</h3>
+          <p>现代化的设计风格，响应式布局</p>
+        </div>
+        <div class="feature-card">
+          <div class="emoji">🔧</div>
+          <h3>易于扩展</h3>
+          <p>结构清晰，方便后续添加功能</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>联系我</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="你的名字" required>
+        <input type="email" placeholder="你的邮箱" required>
+        <textarea placeholder="留言..." rows="4" required></textarea>
+        <button type="submit">发送消息</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Demo Project · Powered by TRAE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
