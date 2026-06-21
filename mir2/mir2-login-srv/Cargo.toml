@@ -1,0 +1,17 @@
+[package]
+name = "mir2-login-srv"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "mir2-login-srv"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { workspace = true }
+mir2-shared = { path = "../mir2-shared" }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }

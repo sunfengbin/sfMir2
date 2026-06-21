@@ -1,0 +1,19 @@
+[package]
+name = "mir2-m2"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "mir2-m2"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { workspace = true }
+mir2-shared = { path = "../mir2-shared" }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+# 使用 vendored feature：mlua 自带 Lua 源码编译，不依赖系统库
+mlua = { version = "0.10", features = ["lua54", "send", "async", "vendored"] }

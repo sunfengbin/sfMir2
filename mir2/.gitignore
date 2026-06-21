@@ -1,0 +1,25 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# 自动生成的 protobuf 代码
+mir2-shared/src/proto/generated/
+
+# 本地运行时产生的配置、日志
+config/local.toml
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# 服务端运行时数据
+/data/
+/dumps/
+
+# 客户端资源编译缓存
+mir2-client/assets/**/*.bin
